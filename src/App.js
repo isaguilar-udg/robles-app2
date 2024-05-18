@@ -1,43 +1,28 @@
 
-import logo from './logo.png';
+import logo from './assets/logo.png';
 import './App.css';
 
 
 function App() {
   return (
     <div className="App">
-
-
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          
-          <form>
+        <img src={logo} className="App-logo" alt="logo" />  
+        <form className="App-form">
             <ul>
               <li>
-                <label for="name">Usuario:</label>
-                <input type="text" id="name" name="user_name"/>
+                <label for="name">Email:</label>
+                <input type="email" id="name" name="user_name"/>
               </li>
               <li>
-                <label for="name">Correo electrónico:</label>
-                <input type="text" id="name" name="user_name"/>
+                <label for="name">Contraseña:</label>
+                <input type="password" id="name" name="user_name"/>
               </li>
               <li class="button">
                 <button type="submit">Enviar</button>
               </li>
             </ul>
           </form>
-
-        </p>
-       <h1>Registro</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
